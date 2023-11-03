@@ -1,118 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Geoff Made Glass - Unique Borosilicate Glass Art</title>
+        <meta name="description" content="Discover unique borosilicate glass art by Geoff Madeley. Explore handcrafted, bespoke pieces that blend traditional craftsmanship with modern aesthetics.">
+        <meta name="keywords" content="glass art, borosilicate glass, artisan, craftsmanship, Geoff Madeley">
+        <meta name="author" content="Geoff Madeley">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Geoff Made Glass</title>
-    <meta name="description" content="Unique Borosilicate Glass Art by Geoff Madeley">
-    <meta name="keywords" content="glass art, borosilicate glass, artisan, craftsmanship">
-    <meta name="author" content="Geoff Madeley">
-        <!-- Add additional SEO tags as necessary -->
-    
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/custom.css">
-</head>
+        <!-- Open Graph / Facebook Meta Tags -->
+        <!-- <meta property="og:type" content="website">
+        <meta property="og:url" content="https://geoffmadeglass.example.com/">
+        <meta property="og:title" content="Geoff Made Glass - Unique Borosilicate Glass Art">
+        <meta property="og:description" content="Discover unique borosilicate glass art by Geoff Madeley. Handcrafted and bespoke pieces available.">
+        <meta property="og:image" content="https://geoffmadeglass.example.com/assets/images/social-preview.png"> -->
 
-<body class="bg-gray-100">
+        <!-- Twitter Meta Tags -->
+        <!-- <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://geoffmadeglass.example.com/">
+        <meta property="twitter:title" content="Geoff Made Glass - Unique Borosilicate Glass Art">
+        <meta property="twitter:description" content="Discover unique borosilicate glass art by Geoff Madeley. Handcrafted and bespoke pieces available.">
+        <meta property="twitter:image" content="https://geoffmadeglass.example.com/assets/images/social-preview.png"> -->
 
-    <!-- Navigation -->
-    <nav class="bg-white sticky top-0 p-4 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-xl font-bold">Geoff Made Glass</a>
-            <div class="space-x-4">
-                <a href="#home" class="text-gray-600 hover:text-black">Home</a>
-                <a href="#gallery" class="text-gray-600 hover:text-black">Gallery</a>
-                <a href="#about" class="text-gray-600 hover:text-black">About Geoff</a>
-                <a href="#contact" class="text-gray-600 hover:text-black">Contact</a>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/styles/custom.css">
+        <!-- Ensure your custom CSS does not override important Tailwind CSS styles unless intended -->
+    </head>
+
+    <body class="bg-gray-100">
+
+        <!-- Navigation -->
+        <header class="bg-white sticky top-0 z-50 shadow">
+            <nav class="container mx-auto p-4 flex justify-between items-center">
+                <a href="#home" class="text-xl font-bold text-gray-900 focus:outline-none focus:shadow-outline">Geoff Made Glass</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="text-gray-600 hover:text-black focus:text-black">Home</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-black focus:text-black">Gallery</a>
+                    <a href="#about" class="text-gray-600 hover:text-black focus:text-black">About Geoff</a>
+                    <a href="#contact" class="text-gray-600 hover:text-black focus:text-black">Contact</a>
+                </div>
+                <!-- Consider implementing a mobile menu for smaller screens -->
+            </nav>
+        </header>
+
+        <!-- Main content -->
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="bg-cover bg-center h-screen relative" style="background-image: url('assets/images/banner-image.jpeg');">
+                <div class="absolute inset-0 bg-black opacity-60"></div>
+                <div class="relative z-10 text-center flex justify-center items-center h-full">
+                    <div>
+                        <h1 class="text-5xl md:text-6xl text-white font-serif font-bold">Geoff Made</h1>
+                        <p class="text-xl text-white mt-4">Exquisite Borosilicate Artistry</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="py-12">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-bold mb-8 text-center">Featured Works</h2>
+                    <!-- Gallery Items -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-gray-300 p-4">
+                                <div class="w-full flex justify-center items-center bg-gray-200">
+                                    <img src="assets/images/heady-cups2.jpeg" alt="Heady Cups" class="w-full object-scale-down">
+                                </div>
+                            <h3 class="text-xl mb-2 mt-4">Heady Cups</h3>
+                            <p class="text-sm">Indulge in the luxury of Geoff's Heady Cups, where traditional form meets contemporary elegance. Crafted with a keen eye for detail, each cup is a masterpiece embodying familiarity and high-end sophistication. The meticulous design reflects not just aesthetic allure, but a comforting grasp that invites you to savor every sip with a touch of artistry.</p>
+                        </div>
+                        <div class="bg-gray-300 p-4">
+                            <div class="w-full flex justify-center items-center bg-gray-200">
+                                <img src="assets/images/functionals1.jpeg" alt="Functionals" class="w-full object-scale-down">
+                            </div>
+                            <h3 class="text-xl mb-2 mt-4">Functionals</h3>
+                            <p class="text-sm">Geoff’s Functionals are a testament to precision and quality. Designed for the discerning cannabis connoisseur, these handcrafted tubes and rigs are not just functional, but an epitome of American craftsmanship. With every piece fully worked through, the Functionals collection epitomizes the harmony of art and utility, offering an elevated experience to the aficionado.</p>
+                        </div>
+                        <div class="bg-gray-300 p-4">
+                            <div class="w-full flex justify-center items-center bg-gray-200">
+                                <img src="assets/images/erig-attachments1.jpeg" alt="E-rig Attachments" class="w-full object-scale-down">
+                            </div>
+                            <h3 class="text-xl mb-2 mt-4">Puffco / Carta Attachments</h3>
+                            <p class="text-sm">Elevate your vaping experience with Geoff's meticulously crafted borosilicate glass attachments for electronic rigs like Puffco and Carta. Each attachment epitomizes technical precision and aesthetic elegance, ensuring a snug fit and a remarkable enhancement to your vaping journey. With a blend of traditional craftsmanship and modern functionality, these high-end attachments are a testament to Geoff's unwavering commitment to quality and innovation in glass artistry.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- About Geoff Section -->
+            <section id="about" class="bg-gray-200 py-12">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-bold mb-8 text-center">About Geoff</h2>
+                    <!-- About Content -->
+                    <p class="mx-auto max-w-xl">
+                        Since embarking on his artistic journey in 2010, Geoff Madeley has meticulously honed his skills in borosilicate glass artistry, with the foundations laid at Flameworks studio in Austin, Texas under the mentorship of Jmass and Kevin Ivey, he delved into mastering the precise and enthralling craft that now defines his repertoire.
+                        <br><br>
+                        Geoff’s work seamlessly blends elegance with functionality, whether it’s through his tasteful cups, crafted functional pieces for cannabis aficionados, or bespoke glass attachments for electronic dab rigs. His preferred realm of creation is at the Vertigo lathe, where each spin transforms glass into functional art, embodying a blend of aesthetic allure and practical utility, hallmarking the essence of Geoff Made’s craftsmanship.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-12">
+                <div class="container mx-auto">
+                    <h2 class="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
+                    <!-- Contact Form -->        
+                    <div class="max-w-md mx-auto">
+                        <form action="https://formsubmit.co/geoffmadeglass@gmail.com" method="POST">
+                            <div class="mb-4">
+                                <label for="name" class="block mb-2 text-sm font-medium">Name</label>
+                                <input type="text" id="name" name="name" class="w-full p-2 border rounded" value="John Doe" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block mb-2 text-sm font-medium">Email</label>
+                                <input type="email" id="email" name="email" class="w-full p-2 border rounded" value="johndoe@example.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+                                <textarea id="message" name="message" class="w-full p-2 border rounded" rows="4" required>I'm interested in a custom piece. Can we discuss more?</textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+                        </form>    
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white py-6">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2023 Geoff Made Glass. All Rights Reserved.</p>
             </div>
-        </div>
-    </nav>
+        </footer>
 
-<!-- Banner Section -->
-<section id="home" class="bg-cover bg-center h-screen flex items-center justify-center text-white text-center relative" style="background-image: url('assets/images/banner-image.jpeg');">
-    
-    <!-- Semi-transparent dark overlay -->
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    
-    <div class="z-10 relative"> <!-- This ensures the text is above the overlay -->
-        <h1 class="text-6xl font-serif text-white shadow-lg">Geoff Made</h1>
-    </div>
-</section>
-
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-12 container mx-auto">
-        <h2 class="text-2xl font-bold mb-8 text-center">Featured Works</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-gray-300 p-4">
-                <div class="w-full flex justify-center items-center bg-gray-200">
-                    <img src="assets/images/heady-cups2.jpeg" alt="Heady Cups" class="w-full object-scale-down">
-                </div>
-                <h3 class="text-xl mb-2 mt-4">Heady Cups</h3>
-                <p class="text-sm">Indulge in the luxury of Geoff's Heady Cups, where traditional form meets contemporary elegance. Crafted with a keen eye for detail, each cup is a masterpiece embodying familiarity and high-end sophistication. The meticulous design reflects not just aesthetic allure, but a comforting grasp that invites you to savor every sip with a touch of artistry.</p>
-            </div>
-            <div class="bg-gray-300 p-4">
-                <div class="w-full flex justify-center items-center bg-gray-200">
-                    <img src="assets/images/functionals1.jpeg" alt="Functionals" class="w-full object-scale-down">
-                </div>
-                <h3 class="text-xl mb-2 mt-4">Functionals</h3>
-                <p class="text-sm">Geoff’s Functionals are a testament to precision and quality. Designed for the discerning cannabis connoisseur, these handcrafted tubes and rigs are not just functional, but an epitome of American craftsmanship. With every piece fully worked through, the Functionals collection epitomizes the harmony of art and utility, offering an elevated experience to the aficionado.</p>
-            </div>
-            <div class="bg-gray-300 p-4">
-                <div class="w-full flex justify-center items-center bg-gray-200">
-                    <img src="assets/images/erig-attachments1.jpeg" alt="E-rig Attachments" class="w-full object-scale-down">
-                </div>
-                <h3 class="text-xl mb-2 mt-4">Puffco / Carta Attachments</h3>
-                <p class="text-sm">Elevate your vaping experience with Geoff's meticulously crafted borosilicate glass attachments for electronic rigs like Puffco and Carta. Each attachment epitomizes technical precision and aesthetic elegance, ensuring a snug fit and a remarkable enhancement to your vaping journey. With a blend of traditional craftsmanship and modern functionality, these high-end attachments are a testament to Geoff's unwavering commitment to quality and innovation in glass artistry.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- About Geoff Section -->
-    <section id="about" class="py-12 bg-gray-200">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-8">About Geoff</h2>
-            <p class="mx-auto max-w-xl">
-                Since embarking on his artistic journey in 2010, Geoff Madeley has meticulously honed his skills in borosilicate glass artistry, with the foundations laid at Flameworks studio in Austin, Texas under the mentorship of Jmass and Kevin Ivey, he delved into mastering the precise and enthralling craft that now defines his repertoire.
-                <br><br>
-                Geoff’s work seamlessly blends elegance with functionality, whether it’s through his tasteful cups, crafted functional pieces for cannabis aficionados, or bespoke glass attachments for electronic dab rigs. His preferred realm of creation is at the Vertigo lathe, where each spin transforms glass into functional art, embodying a blend of aesthetic allure and practical utility, hallmarking the essence of Geoff Made’s craftsmanship.
-            </p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-12 container mx-auto">
-        <h2 class="text-2xl font-bold mb-8 text-center">Contact</h2>
-        <div class="max-w-md mx-auto">
-            <form action="https://formsubmit.co/geoffmadeglass@gmail.com" method="POST">
-                <div class="mb-4">
-                    <label for="name" class="block mb-2 text-sm font-medium">Name</label>
-                    <input type="text" id="name" name="name" class="w-full p-2 border rounded" value="John Doe" required>
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block mb-2 text-sm font-medium">Email</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 border rounded" value="johndoe@example.com" required>
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block mb-2 text-sm font-medium">Message</label>
-                    <textarea id="message" name="message" class="w-full p-2 border rounded" rows="4" required>I'm interested in a custom piece. Can we discuss more?</textarea>
-                </div>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
-            </form>            
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white py-6">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2023 Geoff Made Glass. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
-
+        <!-- Scripts if necessary -->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
